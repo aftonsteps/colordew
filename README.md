@@ -30,7 +30,7 @@ TODO!
 
 ## Contributing
 
-Please see the `CONTRIBUTING` guide for how to add to this package.
+Please see the [Contributing](https://github.com/aftonsteps/colordew/wiki/Contributing) guide for how to add to this package.
 
 ## Code of Conduct
 
