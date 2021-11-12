@@ -3,7 +3,7 @@
 There are many ways to contribute to this package, including technical and non-technical contributions. Every little bit helps and is appreciated!
 
 ## Adding a Palette
-We aim to have palettes for a variety of seasons, characters, locations, and holidays. If you would like to contribute a palette, see the open [Issues](https://github.com/aftonsteps/colordew/issues), find one that is tagged as "Palette Wanted," and assign a palette to yourself.
+We aim to have palettes for a variety of seasons, characters, locations, and holidays. If you would like to contribute a palette, see the open [Issues](https://github.com/aftonsteps/colordew/issues), find one that is tagged as "Palette Wanted," and assign a palette to yourself. If you're a first-time contributor, you can comment below the issue to say "I would like this one assigned to me" and one of the maintainers will assign it to you.
 
 If a palette is already assigned to someone else, please do not work it unless you have discussed collaborating.
 

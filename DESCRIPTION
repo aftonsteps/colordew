@@ -12,6 +12,9 @@ LazyData: true
 RoxygenNote: 7.1.1
 Roxygen: list(markdown = TRUE)
 Imports: 
+    ggplot2,
     lifecycle
 Suggests: 
+    testthat (>= 3.0.0),
     colorblindr
+Config/testthat/edition: 3
