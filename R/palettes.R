@@ -1,4 +1,18 @@
-## TODO:  docs
+#' Colordew Palette
+#'
+#' Returns a named color palette from `colordew`
+#'
+#' @param name name of the desired palette
+#' @param n number of points to include in the palette
+#' @param direction either -1 or 1, where if -1 the palette will be reversed
+#' @param type either "continuous" or "discrete," where "continuous" will automatically
+#' interpolate between colors
+#'
+#' @return a vector of colors of length n
+#' @export
+#' @keywords colors
+#' @examples
+#' colordew_palette("winter")
 colordew_palette <- function(name,
                              n,
                              direction=1,
@@ -29,25 +43,14 @@ colordew_palette <- function(name,
   }
 
   prismatic::color(out)
-  #structure(out, class = "palette", name = name)
 }
 
-## TODO: docs
+#' @export
+colourdew_palette <- colordew_palette
+
+
 pal_fun <- function(name, direction) {
   function(n) {
     colordew_palette(name = name, direction = direction)
   }
-}
-
-#' @export
-print.palette <- function(x, ...) {
-  n <- length(x)
-  old <- par(mar = c(0.5, 0.5, 0.5, 0.5))
-  on.exit(par(old))
-
-  image(1:n, 1, as.matrix(1:n), col = x,
-        ylab = "", xaxt = "n", yaxt = "n", bty = "n")
-
-  rect(0, 0.9, n + 1, 1.1, col = rgb(1, 1, 1, 0.8), border = NA)
-  text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 1, family = "serif")
 }
